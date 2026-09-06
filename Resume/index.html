@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SamayJain - Data Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11.2pt;
+    line-height: 1.44;
+    color: #1a1a1a;
+    background: #fff;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+
+  .header { border-bottom: 1.5px solid #1a1a1a; padding-bottom: 9px; margin-bottom: 11px; }
+
+  .name {
+    font-family: 'EB Garamond', serif;
+    font-size: 26pt;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: #0f0f0f;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+
+  .contact {
+    font-size: 10.2pt;
+    color: #444;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 12px;
+    font-weight: 300;
+  }
+
+  .contact a { color: #1a4fba; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  .section { margin-bottom: 10px; }
+
+  .section-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 13pt;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #0f0f0f;
+    border-bottom: 0.75px solid #ccc;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
+
+  .summary {
+    font-size: 10.7pt;
+    line-height: 1.5;
+    color: #222;
+    font-weight: 300;
+  }
+
+  .skills-block { display: flex; flex-direction: column; gap: 4px; }
+
+  .skill-row { font-size: 10.6pt; line-height: 1.6; }
+
+  .skill-label { font-weight: 500; color: #111; }
+
+  .skill-value { color: #333; font-weight: 300; }
+
+  .job { margin-bottom: 9px; }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+
+  .job-title {
+    font-weight: 500;
+    font-size: 11.2pt;
+    color: #0f0f0f;
+  }
+
+  .job-company {
+    font-size: 10.4pt;
+    color: #1a4fba;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+
+  .job-date {
+    font-size: 10pt;
+    color: #666;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+
+  .role-link {
+    font-size: 9.6pt;
+    font-weight: 400;
+    color: #1a4fba;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+
+  .role-link:hover { text-decoration: underline; }
+
+  .bullets { padding-left: 10px; }
+
+  .bullets li {
+    font-size: 10.6pt;
+    line-height: 1.48;
+    color: #222;
+    margin-bottom: 2.5px;
+    font-weight: 300;
+  }
+
+  .bullets li::marker {
+    color: #1a4fba;
+    font-size: 8pt;
+  }
+
+  strong { font-weight: 500; color: #111; }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .project-name {
+    font-weight: 500;
+    font-size: 11.2pt;
+    color: #0f0f0f;
+  }
+
+  .project-link {
+    font-size: 10pt;
+    color: #1a4fba;
+    text-decoration: none;
+  }
+
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+
+  .edu-degree {
+    font-weight: 500;
+    font-size: 11pt;
+    color: #0f0f0f;
+  }
+
+  .edu-school {
+    font-size: 10.4pt;
+    color: #444;
+    font-weight: 300;
+  }
+
+  .edu-date {
+    font-size: 10pt;
+    color: #666;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+
+  .divider-dot { color: #aaa; margin: 0 3px; }
+
+  @media print {
+    body { padding: 22px 36px; }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="name">Samay Jain</div>
+  <div class="contact">
+    <span>Melbourne, VIC</span>
+    <span class="divider-dot">·</span>
+    <span>0423 324 984</span>
+    <span class="divider-dot">·</span>
+    <a href="mailto:samayj705@gmail.com">Samayj705@gmail.com</a>
+    <span class="divider-dot">·</span>
+    <a href="https://www.linkedin.com/in/samay-jain-5001241b3/">LinkedIn</a>
+    <span class="divider-dot">·</span>
+    <a href="https://github.com/Samay9812">GitHub</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Summary</div>
+  <div class="summary">
+    Data Analyst with experience delivering customer operations insights, BI reporting and process improvement across utilities, healthcare and not-for-profit environments. Currently supporting a Greater Western Water customer operations project through Symbos (RCL), with firsthand exposure to customer contact processes, billing issues, service performance drivers and operational bottlenecks. Skilled in Power BI, SQL, Python and Excel, with a track record of translating complex data into actionable insights for non-technical stakeholders.
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Skills</div>
+
+  <div class="skills-block">
+    <div class="skill-row">
+      <span class="skill-label">Analytics & BI: </span>
+      <span class="skill-value">Power BI (DAX, Data Modelling), SQL, Python (Pandas, NumPy), Microsoft Excel, RStudio, Microsoft Fabric</span>
+    </div>
+
+    <div class="skill-row">
+      <span class="skill-label">Customer & Performance Insights: </span>
+      <span class="skill-value">KPI Reporting, Portfolio Performance Analysis, Channel Performance, Customer Operations, Data Visualisation</span>
+    </div>
+
+    <div class="skill-row">
+      <span class="skill-label">Business Improvement: </span>
+      <span class="skill-value">Process Enhancement, Root Cause Analysis, Data Validation, Requirements Gathering, Stakeholder Reporting</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Experience</div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">Operations Support Officer - Greater Western Water Project</div>
+      <div class="job-date">Oct 2025 – Present</div>
+    </div>
+
+    <div class="job-company">Symbos · Melbourne, VIC</div>
+
+    <ul class="bullets">
+      <li>Support Greater Western Water customer operations by investigating billing and account issues, building firsthand understanding of customer contact drivers, operational pain points and service performance impacts.</li>
+
+      <li>Extract and de-identify customer data from Oracle systems, applying Excel-based validation checks to identify truncated account IDs, data quality issues and records requiring manual review.</li>
+
+      <li>Introduced an estimated arrival tracking field for accounts awaiting upstream meter reading updates, improving account prioritisation and contributing to a 15% reduction in Average Handling Time (AHT).</li>
+
+      <li>Investigate and resolve account-level issues while maintaining QA compliance, supporting a team-led initiative that contributed to the recovery of over $4M in revenue.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">
+        Data Analyst (Part-time) <a href="https://medium.com/@samayj705/what-happens-when-an-organisation-hands-you-8-years-of-data-and-says-figure-it-out-3565d267721b" target="_blank" class="role-link"></a>
+      </div>
+      <div class="job-date">Aug 2024 – Present</div>
+    </div>
+
+    <div class="job-company">Women4STEM · Melbourne, VIC</div>
+
+    <ul class="bullets">
+      <li>Developed Python scripts consolidating 8 years of financial and operational records into a unified dataset, enabling organisation-wide performance reporting and historical funding analysis.</li>
+
+      <li>Built executive Power BI dashboards tracking engagement, sponsorship outcomes and fund utilisation, improving sponsor visibility and increasing retention from 60% to 80%.</li>
+
+      <li>Analysed survey and participant feedback data to identify engagement and sentiment patterns, informing event strategy improvements and increasing attendee satisfaction.</li>
+
+      <li>Automated data extraction across 25+ events by integrating three third-party systems using Python and REST APIs, reducing manual reporting effort by 25%.</li>
+
+      <li>Contributed to migration of reporting workflows to Microsoft Fabric, automating data ingestion and refresh processes across programs and reducing manual reporting effort by approximately 60%.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">
+        Business Analyst Intern <a href="https://medium.com/@samayj705/building-a-smarter-inventory-system-my-first-real-world-data-project-9ad9e8f08b47" target="_blank" class="role-link"></a>
+      </div>
+      <div class="job-date">Jul 2024 – Nov 2024</div>
+    </div>
+
+    <div class="job-company">IntelliPharm · Melbourne, VIC</div>
+
+    <ul class="bullets">
+      <li>Translated business requirements into a stock redistribution model across 4,300+ sites and 5,000+ products, converting operational needs into a scalable analytical solution.</li>
+
+      <li>Optimised a redistribution algorithm processing 22.5M records, reducing runtime from 32 minutes to 5 seconds by replacing Python loops with SQL set-based logic.</li>
+
+      <li>Implemented a weighted scoring framework balancing inventory availability against buyer demand costs, improving match effectiveness from 43% to 80%.</li>
+
+      <li>Enhanced system scalability by structuring a normalised relational data model across multiple tables, improving query efficiency and data storage design.</li>
+
+      <li>Delivered analytical outputs supporting projected savings of up to $11M through improved inventory turnover and redistribution efficiency.</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="section">
+  <div class="section-title">Projects</div>
+
+  <div class="job">
+    <div class="project-header">
+      <div class="project-name">Analytiqal</div>
+      <a class="project-link" href="https://analytiapplapp.streamlit.app/"></a>
+    </div>
+
+    <ul class="bullets">
+      <li>Built a no-code analytics application using <strong>Python and Streamlit</strong> that automates data quality assessment and enables users to compare preprocessing approaches, improving the efficiency and transparency of data preparation workflows.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Education</div>
+
+  <div>
+    <div class="edu-row">
+      <div class="edu-degree">Master of Analytics</div>
+      <div class="edu-date">Feb 2023 – Nov 2024</div>
+    </div>
+
+    <div class="edu-school">RMIT University · Melbourne, VIC</div>
+  </div>
+
+  <div style="margin-top: 6px;">
+    <div class="edu-row">
+      <div class="edu-degree">Bachelor of Economics (Honours)</div>
+      <div class="edu-date">Jul 2019 – Jun 2022</div>
+    </div>
+
+    <div class="edu-school">University of Delhi · India</div>
+  </div>
+</div>
+
+</body>
+</html>
