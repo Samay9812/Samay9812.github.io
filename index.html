@@ -1,197 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Samay Jain — Data Analytics, Business Analysis, and Product Thinking portfolio." />
-  <title>Samay Jain | Analytics Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SamayJain - Data Analyst</title>
 
-  <!-- Favicon (inline SVG, no extra file needed) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23171a22'/%3E%3Ctext x='50' y='64' font-family='Arial,sans-serif' font-size='42' font-weight='700' fill='%23f7f8fb' text-anchor='middle'%3ESJ%3C/text%3E%3C/svg%3E" />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- Open Graph / Twitter card so links shared on LinkedIn etc. show a proper preview -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Samay Jain | Analytics Portfolio" />
-  <meta property="og:description" content="Data Analytics, Business Analysis, and Product Thinking portfolio." />
-  <meta property="og:url" content="https://Samay9812.github.io" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Samay Jain | Analytics Portfolio" />
-  <meta name="twitter:description" content="Data Analytics, Business Analysis, and Product Thinking portfolio." />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11.2pt;
+    line-height: 1.44;
+    color: #1a1a1a;
+    background: #fff;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+
+  .header { border-bottom: 1.5px solid #1a1a1a; padding-bottom: 9px; margin-bottom: 11px; }
+
+  .name {
+    font-family: 'EB Garamond', serif;
+    font-size: 26pt;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: #0f0f0f;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+
+  .contact {
+    font-size: 10.2pt;
+    color: #444;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 12px;
+    font-weight: 300;
+  }
+
+  .contact a { color: #1a4fba; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  .section { margin-bottom: 10px; }
+
+  .section-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 13pt;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #0f0f0f;
+    border-bottom: 0.75px solid #ccc;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
+
+  .summary {
+    font-size: 10.7pt;
+    line-height: 1.5;
+    color: #222;
+    font-weight: 300;
+  }
+
+  .skills-block { display: flex; flex-direction: column; gap: 4px; }
+
+  .skill-row { font-size: 10.6pt; line-height: 1.6; }
+
+  .skill-label { font-weight: 500; color: #111; }
+
+  .skill-value { color: #333; font-weight: 300; }
+
+  .job { margin-bottom: 9px; }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+
+  .job-title {
+    font-weight: 500;
+    font-size: 11.2pt;
+    color: #0f0f0f;
+  }
+
+  .job-company {
+    font-size: 10.4pt;
+    color: #1a4fba;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+
+  .job-date {
+    font-size: 10pt;
+    color: #666;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+
+  .role-link {
+    font-size: 9.6pt;
+    font-weight: 400;
+    color: #1a4fba;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+
+  .role-link:hover { text-decoration: underline; }
+
+  .bullets { padding-left: 10px; }
+
+  .bullets li {
+    font-size: 10.6pt;
+    line-height: 1.48;
+    color: #222;
+    margin-bottom: 2.5px;
+    font-weight: 300;
+  }
+
+  .bullets li::marker {
+    color: #1a4fba;
+    font-size: 8pt;
+  }
+
+  strong { font-weight: 500; color: #111; }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .project-name {
+    font-weight: 500;
+    font-size: 11.2pt;
+    color: #0f0f0f;
+  }
+
+  .project-link {
+    font-size: 10pt;
+    color: #1a4fba;
+    text-decoration: none;
+  }
+
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+
+  .edu-degree {
+    font-weight: 500;
+    font-size: 11pt;
+    color: #0f0f0f;
+  }
+
+  .edu-school {
+    font-size: 10.4pt;
+    color: #444;
+    font-weight: 300;
+  }
+
+  .edu-date {
+    font-size: 10pt;
+    color: #666;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+
+  .divider-dot { color: #aaa; margin: 0 3px; }
+
+  @media print {
+    body { padding: 22px 36px; }
+  }
+</style>
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#top" class="brand"><span class="brand-mark">SJ</span><span class="brand-text">Samay Jain</span></a>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav class="main-nav" id="mainNav">
-        <a href="#work">Work</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#about">About</a><a href="resume/" target="_blank" rel="noopener">Resume ↗</a><a href="#contact">Contact</a>
-      </nav>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">◐</button>
+<div class="header">
+  <div class="name">Samay Jain</div>
+  <div class="contact">
+    <span>Melbourne, VIC</span>
+    <span class="divider-dot">·</span>
+    <span>0423 324 984</span>
+    <span class="divider-dot">·</span>
+    <a href="mailto:samayj705@gmail.com">Samayj705@gmail.com</a>
+    <span class="divider-dot">·</span>
+    <a href="https://www.linkedin.com/in/samay-jain-5001241b3/">LinkedIn</a>
+    <span class="divider-dot">·</span>
+    <a href="https://github.com/Samay9812">GitHub</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Summary</div>
+  <div class="summary">
+    Data Analyst with experience delivering customer operations insights, BI reporting and process improvement across utilities, healthcare and not-for-profit environments. Currently supporting a Greater Western Water customer operations project through Symbos (RCL), with firsthand exposure to customer contact processes, billing issues, service performance drivers and operational bottlenecks. Skilled in Power BI, SQL, Python and Excel, with a track record of translating complex data into actionable insights for non-technical stakeholders.
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Skills</div>
+
+  <div class="skills-block">
+    <div class="skill-row">
+      <span class="skill-label">Analytics & BI: </span>
+      <span class="skill-value">Power BI (DAX, Data Modelling), SQL, Python (Pandas, NumPy), Microsoft Excel, RStudio, Microsoft Fabric</span>
     </div>
-  </header>
 
-  <main id="main">
-    <section class="hero section" id="top">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Data Analytics · Business Analysis · Product Thinking</p>
-          <h1>I turn messy problems into clear systems, useful analysis, and decisions people can act on.</h1>
-          <p class="hero-lede">I’m Samay Jain, an analytics professional based in Melbourne. My work spans analytics, business analysis, process improvement, automation, and building tools that make complex analytical workflows easier to understand.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">Explore my work</a>
-            <a class="btn btn-secondary" href="#journey">See my journey</a>
-          </div>
-        </div>
-        <aside class="hero-card reveal">
-          <div class="hero-card-head"><span>At a glance</span><span class="status-dot"><i></i> Open to analytics roles</span></div>
-          <div class="metrics-grid">
-            <div class="metric"><strong>22.5M</strong><span>pharmacy-product opportunities analysed</span></div>
-            <div class="metric"><strong>32m → 5s</strong><span>runtime after redesigning a matching process</span></div>
-            <div class="metric"><strong>60+</strong><span>event reports automated</span></div>
-            <div class="metric"><strong>25+</strong><span>events supported through analytics work</span></div>
-          </div>
-          <p class="hero-note">Outcomes first. Tools second.</p>
-        </aside>
+    <div class="skill-row">
+      <span class="skill-label">Customer & Performance Insights: </span>
+      <span class="skill-value">KPI Reporting, Portfolio Performance Analysis, Channel Performance, Customer Operations, Data Visualisation</span>
+    </div>
+
+    <div class="skill-row">
+      <span class="skill-label">Business Improvement: </span>
+      <span class="skill-value">Process Enhancement, Root Cause Analysis, Data Validation, Requirements Gathering, Stakeholder Reporting</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Experience</div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">Operations Support Officer - Greater Western Water Project</div>
+      <div class="job-date">Oct 2025 – Present</div>
+    </div>
+
+    <div class="job-company">Symbos · Melbourne, VIC</div>
+
+    <ul class="bullets">
+      <li>Support Greater Western Water customer operations by investigating billing and account issues, building firsthand understanding of customer contact drivers, operational pain points and service performance impacts.</li>
+
+      <li>Extract and de-identify customer data from Oracle systems, applying Excel-based validation checks to identify truncated account IDs, data quality issues and records requiring manual review.</li>
+
+      <li>Introduced an estimated arrival tracking field for accounts awaiting upstream meter reading updates, improving account prioritisation and contributing to a 15% reduction in Average Handling Time (AHT).</li>
+
+      <li>Investigate and resolve account-level issues while maintaining QA compliance, supporting a team-led initiative that contributed to the recovery of over $4M in revenue.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">
+        Data Analyst (Part-time) <a href="https://medium.com/@samayj705/what-happens-when-an-organisation-hands-you-8-years-of-data-and-says-figure-it-out-3565d267721b" target="_blank" class="role-link"></a>
       </div>
-    </section>
+      <div class="job-date">Aug 2024 – Present</div>
+    </div>
 
-    <section class="section" id="work">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects that show how I think</h2>
-          <p>Each case study focuses on the problem, constraints, decisions, solution, and outcome—not a wall of technologies.</p>
-        </div>
+    <div class="job-company">Women4STEM · Melbourne, VIC</div>
 
-        <article class="featured-project reveal">
-          <div class="featured-top">
-            <div>
-              <p class="project-kicker">Featured product</p>
-              <h3>Analytiqal</h3>
-              <p>A guided no-code analytics workflow designed to help users learn the analytical process while working with real datasets.</p>
-            </div>
-            <span class="project-state">Built · Stress-tested · Deployed</span>
-          </div>
-          <div class="project-flow">
-            <div><span>01</span><h4>Problem</h4><p>Analytics tools can automate tasks but hide the reasoning behind the workflow.</p></div>
-            <div><span>02</span><h4>Approach</h4><p>Designed a step-by-step workflow from import to profiling, cleaning, transformation, feature engineering and visualisation.</p></div>
-            <div><span>03</span><h4>What it proves</h4><p>Product scoping, UX decisions, failure handling, regression testing, data integrity and iterative development.</p></div>
-          </div>
-          <div class="project-actions">
-            <button class="btn btn-primary case-trigger" type="button" data-case="analytiqal">Open case study</button>
-            <a class="btn btn-secondary" href="#" data-config-link="analytiqal" target="_blank" rel="noopener">Live demo</a>
-          </div>
-          <p class="demo-note">Hosted on Streamlit Community Cloud — the first load after a while may take 30–60s to wake up.</p>
-        </article>
+    <ul class="bullets">
+      <li>Developed Python scripts consolidating 8 years of financial and operational records into a unified dataset, enabling organisation-wide performance reporting and historical funding analysis.</li>
 
-        <div class="project-grid">
-          <article class="project-card reveal">
-            <div class="project-card-top"><span class="project-tag">Technical BA</span><span class="project-year">2024</span></div>
-            <h3>IntelliPharm Inventory Redistribution</h3>
-            <p>Redesigned a pharmacy matching process using SQL, Python and economics-based logic.</p>
-            <div class="mini-metrics"><span><strong>32 min → 5 sec</strong><small>runtime</small></span><span><strong>Up to $11M</strong><small>projected annual savings</small></span></div>
-            <button class="text-button case-trigger" type="button" data-case="intellipharm">View case study →</button>
-          </article>
+      <li>Built executive Power BI dashboards tracking engagement, sponsorship outcomes and fund utilisation, improving sponsor visibility and increasing retention from 60% to 80%.</li>
 
-          <article class="project-card reveal">
-            <div class="project-card-top"><span class="project-tag">Data Analyst</span><span class="project-year">2024–Present</span></div>
-            <h3>Women4STEM Sponsor & Event Analytics</h3>
-            <p>Turned scattered operational data into automated reporting, sponsor insights and decision support.</p>
-            <div class="mini-metrics"><span><strong>60+</strong><small>reports automated</small></span><span><strong>~80%</strong><small>manual handling reduced</small></span></div>
-            <button class="text-button case-trigger" type="button" data-case="women4stem">View case study →</button>
-          </article>
+      <li>Analysed survey and participant feedback data to identify engagement and sentiment patterns, informing event strategy improvements and increasing attendee satisfaction.</li>
 
-          <article class="project-card reveal">
-            <div class="project-card-top"><span class="project-tag">Power BI</span><span class="project-year">Personal</span></div>
-            <h3>Personal Finance Tracker</h3>
-            <p>Built a decision-focused dashboard using a star schema, Power Query, DAX and forecasting.</p>
-            <button class="text-button case-trigger" type="button" data-case="finance">View case study →</button>
-          </article>
+      <li>Automated data extraction across 25+ events by integrating three third-party systems using Python and REST APIs, reducing manual reporting effort by 25%.</li>
 
-          <article class="project-card reveal">
-            <div class="project-card-top"><span class="project-tag">R / Forecasting</span><span class="project-year">Academic</span></div>
-            <h3>Gold Price Prediction</h3>
-            <p>Compared ARIMA, SARIMA and ARMA-GARCH approaches and selected the best-performing model.</p>
-            <button class="text-button case-trigger" type="button" data-case="gold">View case study →</button>
-          </article>
-        </div>
+      <li>Contributed to migration of reporting workflows to Microsoft Fabric, automating data ingestion and refresh processes across programs and reducing manual reporting effort by approximately 60%.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">
+        Business Analyst Intern <a href="https://medium.com/@samayj705/building-a-smarter-inventory-system-my-first-real-world-data-project-9ad9e8f08b47" target="_blank" class="role-link"></a>
       </div>
-    </section>
+      <div class="job-date">Jul 2024 – Nov 2024</div>
+    </div>
 
-    <section class="section section-alt" id="journey">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">My journey</p><h2>Experience as a story, not a job-description list</h2><p>Click any stage to see what changed in how I worked and thought.</p></div>
-        <div class="journey-layout">
-          <div class="timeline">
-            <button class="timeline-item active" type="button" data-journey="flipkart"><span class="timeline-year">2021</span><span class="timeline-title">Flipkart</span><span class="timeline-role">Supply Chain Intern</span></button>
-            <button class="timeline-item" type="button" data-journey="rmit"><span class="timeline-year">2023–2024</span><span class="timeline-title">RMIT</span><span class="timeline-role">Master of Analytics · Peer Mentor</span></button>
-            <button class="timeline-item" type="button" data-journey="intelli"><span class="timeline-year">2024</span><span class="timeline-title">IntelliPharm</span><span class="timeline-role">Technical Business Analyst</span></button>
-            <button class="timeline-item" type="button" data-journey="w4s"><span class="timeline-year">2024–Present</span><span class="timeline-title">Women4STEM</span><span class="timeline-role">Data Analyst</span></button>
-            <button class="timeline-item" type="button" data-journey="gww"><span class="timeline-year">2025–Present</span><span class="timeline-title">Operations & Process Improvement</span><span class="timeline-role">Greater Western Water project</span></button>
-          </div>
-          <div class="journey-detail reveal" id="journeyDetail"></div>
-        </div>
-      </div>
-    </section>
+    <div class="job-company">IntelliPharm · Melbourne, VIC</div>
 
-    <section class="section" id="thinking">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">How I work</p><h2>My thinking should be visible</h2></div>
-        <div class="thinking-flow reveal">
-          <button type="button" class="thinking-step active" data-thinking="understand"><span>1</span><strong>Understand</strong><small>What is actually wrong?</small></button><div class="flow-line"></div>
-          <button type="button" class="thinking-step" data-thinking="structure"><span>2</span><strong>Structure</strong><small>Data · process · users</small></button><div class="flow-line"></div>
-          <button type="button" class="thinking-step" data-thinking="build"><span>3</span><strong>Build</strong><small>Smallest useful solution</small></button><div class="flow-line"></div>
-          <button type="button" class="thinking-step" data-thinking="validate"><span>4</span><strong>Validate</strong><small>Test with real cases</small></button><div class="flow-line"></div>
-          <button type="button" class="thinking-step" data-thinking="improve"><span>5</span><strong>Improve</strong><small>Fix root causes</small></button>
-        </div>
-        <div class="thinking-detail reveal" id="thinkingDetail"></div>
-      </div>
-    </section>
+    <ul class="bullets">
+      <li>Translated business requirements into a stock redistribution model across 4,300+ sites and 5,000+ products, converting operational needs into a scalable analytical solution.</li>
 
-    <section class="section section-alt" id="skills">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">Capabilities</p><h2>Skills organised by evidence</h2><p>Click a capability to see where I have actually used it.</p></div>
-        <div class="skill-tabs">
-          <button type="button" class="skill-tab active" data-skill="analytics">Data Analytics</button>
-          <button type="button" class="skill-tab" data-skill="business">Business Analysis</button>
-          <button type="button" class="skill-tab" data-skill="communication">Communication</button>
-          <button type="button" class="skill-tab" data-skill="product">Product & Automation</button>
-        </div>
-        <div class="skill-detail reveal" id="skillDetail"></div>
-      </div>
-    </section>
+      <li>Optimised a redistribution algorithm processing 22.5M records, reducing runtime from 32 minutes to 5 seconds by replacing Python loops with SQL set-based logic.</li>
 
-    <section class="section" id="about">
-      <div class="container about-grid">
-        <div class="about-copy reveal"><p class="eyebrow">About</p><h2>Curious about systems. Practical about solutions.</h2><p>My background in economics shaped how I think about trade-offs, incentives and constrained decisions. Analytics gave me the tools to test those ideas with data.</p><p>I’m most interested in roles where I can combine analysis, business understanding and problem solving rather than work in only one narrow technical lane.</p></div>
-        <div class="about-code reveal"><div><span>focus:</span> useful decisions</div><div><span>style:</span> structured + pragmatic</div><div><span>strength:</span> problem → system → outcome</div><div><span>location:</span> Melbourne, Australia</div><div><span>interests:</span> analytics · BA · reporting · product thinking</div></div>
-      </div>
-    </section>
+      <li>Implemented a weighted scoring framework balancing inventory availability against buyer demand costs, improving match effectiveness from 43% to 80%.</li>
 
-    <section class="section section-alt" id="contact">
-      <div class="container contact-card reveal">
-        <div><p class="eyebrow">Contact</p><h2>Let’s talk about useful problems.</h2><p>I’m open to Data Analyst, Business Analyst and Reporting / Insights opportunities.</p></div>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="#" data-config-link="email">Email me</a>
-          <a class="btn btn-secondary" href="#" data-config-link="linkedin" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-secondary" href="#" data-config-link="github" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn-secondary" href="resume/" target="_blank" rel="noopener">View résumé ↗</a>
-        </div>
-        
-      </div>
-    </section>
-  </main>
+      <li>Enhanced system scalability by structuring a normalised relational data model across multiple tables, improving query efficiency and data storage design.</li>
 
-  <footer class="site-footer"><div class="container footer-wrap"><span>© <span id="year"></span> Samay Jain</span><a href="#top">Back to top ↑</a></div></footer>
+      <li>Delivered analytical outputs supporting projected savings of up to $11M through improved inventory turnover and redistribution efficiency.</li>
+    </ul>
+  </div>
 
-  <dialog class="case-modal" id="caseModal" aria-labelledby="caseTitle"><button class="modal-close" id="modalClose" type="button" aria-label="Close case study">×</button><div id="caseContent"></div></dialog>
-  <script src="script.js"></script>
+</div>
+
+<div class="section">
+  <div class="section-title">Projects</div>
+
+  <div class="job">
+    <div class="project-header">
+      <div class="project-name">Analytiqal</div>
+      <a class="project-link" href="https://analytiapplapp.streamlit.app/"></a>
+    </div>
+
+    <ul class="bullets">
+      <li>Built a no-code analytics application using <strong>Python and Streamlit</strong> that automates data quality assessment and enables users to compare preprocessing approaches, improving the efficiency and transparency of data preparation workflows.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Education</div>
+
+  <div>
+    <div class="edu-row">
+      <div class="edu-degree">Master of Analytics</div>
+      <div class="edu-date">Feb 2023 – Nov 2024</div>
+    </div>
+
+    <div class="edu-school">RMIT University · Melbourne, VIC</div>
+  </div>
+
+  <div style="margin-top: 6px;">
+    <div class="edu-row">
+      <div class="edu-degree">Bachelor of Economics (Honours)</div>
+      <div class="edu-date">Jul 2019 – Jun 2022</div>
+    </div>
+
+    <div class="edu-school">University of Delhi · India</div>
+  </div>
+</div>
+
 </body>
 </html>
