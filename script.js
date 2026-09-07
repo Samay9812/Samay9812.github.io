@@ -199,7 +199,7 @@ function renderSkill(key) {
 let lastCaseTrigger = null;
 function openCase(key, trigger) {
   const item = caseStudies[key];
-  document.getElementById("caseContent").innerHTML = `<div class="case-inner"><span class="detail-label">${item.kicker}</span><h2 id="caseTitle">${item.title}</h2><p>${item.intro}</p><div class="case-grid">${item.boxes.map(([t,b]) => `<div class="case-box"><h4>${t}</h4><p>${b}</p></div>`).join("")}</div><div class="case-results">${item.results.map(([v,l]) => `<div class="case-result"><strong>${v}</strong><span>${l}</span></div>`).join("")}</div><div class="case-box" style="margin-top:16px;"><h4>What I would tell an interviewer</h4><p>${item.takeaway}</p></div></div>`;
+  document.getElementById("caseContent").innerHTML = `<div class="case-inner"><span class="detail-label">${item.kicker}</span><h2 id="caseTitle">${item.title}</h2><p>${item.intro}</p><div class="case-grid">${item.boxes.map(([t,b]) => `<div class="case-box"><h4>${t}</h4><p>${b}</p></div>`).join("")}</div><div class="case-results">${item.results.map(([v,l]) => `<div class="case-result"><strong>${v}</strong><span>${l}</span></div>`).join("")}</div><div class="case-box" style="margin-top:16px;"><h4>My Take</h4><p>${item.takeaway}</p></div></div>`;
   lastCaseTrigger = trigger || document.activeElement;
   const modal = document.getElementById("caseModal");
   if (typeof modal.showModal === "function") modal.showModal(); else modal.setAttribute("open","");
