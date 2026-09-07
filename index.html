@@ -1,198 +1,961 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Samay Jain — Data Analytics, Business Analysis, and Product Thinking portfolio." />
+
+  <meta
+    name="description"
+    content="Samay Jain — Data Analytics, Business Analysis, and Product Thinking portfolio."
+  />
+
   <title>Samay Jain | Analytics Portfolio</title>
 
-  <!-- Favicon (inline SVG, no extra file needed) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23171a22'/%3E%3Ctext x='50' y='64' font-family='Arial,sans-serif' font-size='42' font-weight='700' fill='%23f7f8fb' text-anchor='middle'%3ESJ%3C/text%3E%3C/svg%3E" />
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23171a22'/%3E%3Ctext x='50' y='64' font-family='Arial,sans-serif' font-size='42' font-weight='700' fill='%23f7f8fb' text-anchor='middle'%3ESJ%3C/text%3E%3C/svg%3E"
+  />
 
-  <!-- Open Graph / Twitter card so links shared on LinkedIn etc. show a proper preview -->
+  <!-- Open Graph / social sharing -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Samay Jain | Analytics Portfolio" />
-  <meta property="og:description" content="Data Analytics, Business Analysis, and Product Thinking portfolio." />
+  <meta
+    property="og:description"
+    content="Data Analytics, Business Analysis, and Product Thinking portfolio."
+  />
   <meta property="og:url" content="https://Samay9812.github.io" />
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Samay Jain | Analytics Portfolio" />
-  <meta name="twitter:description" content="Data Analytics, Business Analysis, and Product Thinking portfolio." />
+  <meta
+    name="twitter:description"
+    content="Data Analytics, Business Analysis, and Product Thinking portfolio."
+  />
 
+  <!-- Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800;900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800;900&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================================================
+       NAVIGATION
+       ========================================================= -->
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="#top" class="brand"><span class="brand-mark">SJ</span><span class="brand-text">Samay Jain</span></a>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <a href="#top" class="brand">
+        <span class="brand-mark">SJ</span>
+        <span class="brand-text">Samay Jain</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <nav class="main-nav" id="mainNav">
-        <a href="#work">Work</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a href="#work">Work</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+
+        <!-- Keep capital R because your GitHub folder is named Resume -->
+        <a href="Resume/" target="_blank" rel="noopener">Resume ↗</a>
+
+        <a href="#contact">Contact</a>
       </nav>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">◐</button>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-label="Toggle theme"
+      >
+        ◐
+      </button>
+
     </div>
   </header>
 
+
   <main id="main">
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+
     <section class="hero section" id="top">
+
       <div class="container hero-grid">
+
         <div class="hero-copy reveal">
-          <p class="eyebrow">Data Analytics · Business Analysis · Product Thinking</p>
-          <h1>The hardest part isn't analysing the data. It's knowing what problem is worth solving.</h1>
-          <p class="hero-sub">That's where I start. Then I figure out how data, process and technology can get us there.</p>
-          <p class="hero-lede">I’m Samay Jain, an analytics professional based in Melbourne. I work across data analytics, business analysis, process improvement and automation—understanding the problem first, then building the analysis or solution around it.</p>
+
+          <p class="eyebrow">
+            Data Analytics · Business Analysis · Product Thinking
+          </p>
+
+          <h1>
+            The hardest part isn’t analysing the data.
+            It’s knowing what problem is worth solving.
+          </h1>
+
+          <p class="hero-lede">
+            That’s where I start — then I use data, process and technology
+            to build the right solution.
+          </p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">Explore my work</a>
-            <a class="btn btn-secondary" href="#journey">See my journey</a>
+
+            <a class="btn btn-primary" href="#work">
+              Explore my work
+            </a>
+
+            <a class="btn btn-secondary" href="#journey">
+              See my journey
+            </a>
+
           </div>
+
         </div>
+
+
         <aside class="hero-card reveal">
-          <div class="hero-card-head"><span>At a glance</span><span class="status-dot"><i></i> Open to analytics roles</span></div>
-          <div class="metrics-grid">
-            <div class="metric"><strong>22.5M</strong><span>pharmacy-product opportunities analysed</span></div>
-            <div class="metric"><strong>32m → 5s</strong><span>runtime after redesigning a matching process</span></div>
-            <div class="metric"><strong>60+</strong><span>event reports automated</span></div>
-            <div class="metric"><strong>25+</strong><span>events supported through analytics work</span></div>
+
+          <div class="hero-card-head">
+
+            <span>At a glance</span>
+
+            <span class="status-dot">
+              <i></i>
+              Open to analytics roles
+            </span>
+
           </div>
-          <p class="hero-note">Outcomes first. Tools second.</p>
+
+          <div class="metrics-grid">
+
+            <div class="metric">
+              <strong>22.5M</strong>
+              <span>pharmacy-product opportunities analysed</span>
+            </div>
+
+            <div class="metric">
+              <strong>32m → 5s</strong>
+              <span>runtime after redesigning a matching process</span>
+            </div>
+
+            <div class="metric">
+              <strong>60+</strong>
+              <span>event reports automated</span>
+            </div>
+
+            <div class="metric">
+              <strong>25+</strong>
+              <span>events supported through analytics work</span>
+            </div>
+
+          </div>
+
+          <p class="hero-note">
+            Outcomes first. Tools second.
+          </p>
+
         </aside>
+
       </div>
+
     </section>
+
+
+    <!-- =========================================================
+         SELECTED WORK
+         ========================================================= -->
 
     <section class="section" id="work">
+
       <div class="container">
+
         <div class="section-heading reveal">
+
           <p class="eyebrow">Selected work</p>
+
           <h2>Projects that show how I think</h2>
-          <p>Each case study focuses on the problem, constraints, decisions, solution, and outcome—not a wall of technologies.</p>
+
+          <p>
+            Each case study focuses on the problem, constraints, decisions,
+            solution, and outcome—not a wall of technologies.
+          </p>
+
         </div>
+
+
+        <!-- ANALYTIQAL -->
 
         <article class="featured-project reveal">
+
           <div class="featured-top">
+
             <div>
-              <p class="project-kicker">Featured product</p>
+
+              <p class="project-kicker">
+                Featured product
+              </p>
+
               <h3>Analytiqal</h3>
-              <p>A guided no-code analytics workflow designed to help users learn the analytical process while working with real datasets.</p>
+
+              <p>
+                A guided no-code analytics workflow designed to help users
+                learn the analytical process while working with real datasets.
+              </p>
+
             </div>
-            <span class="project-state">Built · Stress-tested · Deployed</span>
+
+            <span class="project-state">
+              Built · Stress-tested · Deployed
+            </span>
+
           </div>
+
+
           <div class="project-flow">
-            <div><span>01</span><h4>Problem</h4><p>Analytics tools can automate tasks but hide the reasoning behind the workflow.</p></div>
-            <div><span>02</span><h4>Approach</h4><p>Designed a step-by-step workflow from import to profiling, cleaning, transformation, feature engineering and visualisation.</p></div>
-            <div><span>03</span><h4>What it proves</h4><p>Product scoping, UX decisions, failure handling, regression testing, data integrity and iterative development.</p></div>
+
+            <div>
+
+              <span>01</span>
+
+              <h4>Problem</h4>
+
+              <p>
+                Analytics tools can automate tasks but hide the reasoning
+                behind the workflow.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <span>02</span>
+
+              <h4>Approach</h4>
+
+              <p>
+                Designed a step-by-step workflow from import to profiling,
+                cleaning, transformation, feature engineering and
+                visualisation.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <span>03</span>
+
+              <h4>What it proves</h4>
+
+              <p>
+                Product scoping, UX decisions, failure handling, regression
+                testing, data integrity and iterative development.
+              </p>
+
+            </div>
+
           </div>
+
+
           <div class="project-actions">
-            <button class="btn btn-primary case-trigger" type="button" data-case="analytiqal">Open case study</button>
-            <a class="btn btn-secondary" href="#" data-config-link="analytiqal" target="_blank" rel="noopener">Live demo</a>
+
+            <button
+              class="btn btn-primary case-trigger"
+              type="button"
+              data-case="analytiqal"
+            >
+              Open case study
+            </button>
+
+            <a
+              class="btn btn-secondary"
+              href="#"
+              data-config-link="analytiqal"
+              target="_blank"
+              rel="noopener"
+            >
+              Live demo
+            </a>
+
           </div>
-          <p class="demo-note">Hosted on Streamlit Community Cloud — the first load after a while may take 30–60s to wake up.</p>
+
+          <p class="demo-note">
+            Hosted on Streamlit Community Cloud — the first load after a while
+            may take 30–60s to wake up.
+          </p>
+
         </article>
 
+
+        <!-- OTHER PROJECTS -->
+
         <div class="project-grid">
-          <article class="project-card reveal">
-            <div class="project-card-top"><span class="project-tag">Technical BA</span><span class="project-year">2024</span></div>
-            <h3>IntelliPharm Inventory Redistribution</h3>
-            <p>Redesigned a pharmacy matching process using SQL, Python and economics-based logic.</p>
-            <div class="mini-metrics"><span><strong>32 min → 5 sec</strong><small>runtime</small></span><span><strong>Up to $11M</strong><small>projected annual savings</small></span></div>
-            <button class="text-button case-trigger" type="button" data-case="intellipharm">View case study →</button>
-          </article>
+
 
           <article class="project-card reveal">
-            <div class="project-card-top"><span class="project-tag">Data Analyst</span><span class="project-year">2024–Present</span></div>
-            <h3>Women4STEM Sponsor & Event Analytics</h3>
-            <p>Turned scattered operational data into automated reporting, sponsor insights and decision support.</p>
-            <div class="mini-metrics"><span><strong>60+</strong><small>reports automated</small></span><span><strong>~80%</strong><small>manual handling reduced</small></span></div>
-            <button class="text-button case-trigger" type="button" data-case="women4stem">View case study →</button>
+
+            <div class="project-card-top">
+
+              <span class="project-tag">
+                Technical BA
+              </span>
+
+              <span class="project-year">
+                2024
+              </span>
+
+            </div>
+
+            <h3>
+              IntelliPharm Inventory Redistribution
+            </h3>
+
+            <p>
+              Redesigned a pharmacy matching process using SQL, Python and
+              economics-based logic.
+            </p>
+
+            <div class="mini-metrics">
+
+              <span>
+                <strong>32 min → 5 sec</strong>
+                <small>runtime</small>
+              </span>
+
+              <span>
+                <strong>Up to $11M</strong>
+                <small>projected annual savings</small>
+              </span>
+
+            </div>
+
+            <button
+              class="text-button case-trigger"
+              type="button"
+              data-case="intellipharm"
+            >
+              View case study →
+            </button>
+
           </article>
 
-          <article class="project-card reveal">
-            <div class="project-card-top"><span class="project-tag">Power BI</span><span class="project-year">Personal</span></div>
-            <h3>Personal Finance Tracker</h3>
-            <p>Built a decision-focused dashboard using a star schema, Power Query, DAX and forecasting.</p>
-            <button class="text-button case-trigger" type="button" data-case="finance">View case study →</button>
-          </article>
 
           <article class="project-card reveal">
-            <div class="project-card-top"><span class="project-tag">R / Forecasting</span><span class="project-year">Academic</span></div>
-            <h3>Gold Price Prediction</h3>
-            <p>Compared ARIMA, SARIMA and ARMA-GARCH approaches and selected the best-performing model.</p>
-            <button class="text-button case-trigger" type="button" data-case="gold">View case study →</button>
+
+            <div class="project-card-top">
+
+              <span class="project-tag">
+                Data Analyst
+              </span>
+
+              <span class="project-year">
+                2024–Present
+              </span>
+
+            </div>
+
+            <h3>
+              Women4STEM Sponsor & Event Analytics
+            </h3>
+
+            <p>
+              Turned scattered operational data into automated reporting,
+              sponsor insights and decision support.
+            </p>
+
+            <div class="mini-metrics">
+
+              <span>
+                <strong>60+</strong>
+                <small>reports automated</small>
+              </span>
+
+              <span>
+                <strong>~80%</strong>
+                <small>manual handling reduced</small>
+              </span>
+
+            </div>
+
+            <button
+              class="text-button case-trigger"
+              type="button"
+              data-case="women4stem"
+            >
+              View case study →
+            </button>
+
           </article>
+
+
+          <article class="project-card reveal">
+
+            <div class="project-card-top">
+
+              <span class="project-tag">
+                Power BI
+              </span>
+
+              <span class="project-year">
+                Personal
+              </span>
+
+            </div>
+
+            <h3>
+              Personal Finance Tracker
+            </h3>
+
+            <p>
+              Built a decision-focused dashboard using a star schema,
+              Power Query, DAX and forecasting.
+            </p>
+
+            <button
+              class="text-button case-trigger"
+              type="button"
+              data-case="finance"
+            >
+              View case study →
+            </button>
+
+          </article>
+
+
+          <article class="project-card reveal">
+
+            <div class="project-card-top">
+
+              <span class="project-tag">
+                R / Forecasting
+              </span>
+
+              <span class="project-year">
+                Academic
+              </span>
+
+            </div>
+
+            <h3>
+              Gold Price Prediction
+            </h3>
+
+            <p>
+              Compared ARIMA, SARIMA and ARMA-GARCH approaches and selected
+              the best-performing model.
+            </p>
+
+            <button
+              class="text-button case-trigger"
+              type="button"
+              data-case="gold"
+            >
+              View case study →
+            </button>
+
+          </article>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================================================
+         JOURNEY
+         ========================================================= -->
 
     <section class="section section-alt" id="journey">
+
       <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">My journey</p><h2>Experience as a story, not a job-description list</h2><p>Click any stage to see what changed in how I worked and thought.</p></div>
-        <div class="journey-layout">
-          <div class="timeline">
-            <button class="timeline-item active" type="button" data-journey="flipkart"><span class="timeline-year">2021</span><span class="timeline-title">Flipkart</span><span class="timeline-role">Supply Chain Intern</span></button>
-            <button class="timeline-item" type="button" data-journey="rmit"><span class="timeline-year">2023–2024</span><span class="timeline-title">RMIT</span><span class="timeline-role">Master of Analytics · Peer Mentor</span></button>
-            <button class="timeline-item" type="button" data-journey="intelli"><span class="timeline-year">2024</span><span class="timeline-title">IntelliPharm</span><span class="timeline-role">Technical Business Analyst</span></button>
-            <button class="timeline-item" type="button" data-journey="w4s"><span class="timeline-year">2024–Present</span><span class="timeline-title">Women4STEM</span><span class="timeline-role">Data Analyst</span></button>
-            <button class="timeline-item" type="button" data-journey="gww"><span class="timeline-year">2025–Present</span><span class="timeline-title">Operations & Process Improvement</span><span class="timeline-role">Greater Western Water project</span></button>
-          </div>
-          <div class="journey-detail reveal" id="journeyDetail"></div>
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">
+            My journey
+          </p>
+
+          <h2>
+            Experience as a story, not a job-description list
+          </h2>
+
+          <p>
+            Click any stage to see what changed in how I worked and thought.
+          </p>
+
         </div>
+
+
+        <div class="journey-layout">
+
+          <div class="timeline">
+
+            <button
+              class="timeline-item active"
+              type="button"
+              data-journey="flipkart"
+            >
+              <span class="timeline-year">2021</span>
+              <span class="timeline-title">Flipkart</span>
+              <span class="timeline-role">Supply Chain Intern</span>
+            </button>
+
+
+            <button
+              class="timeline-item"
+              type="button"
+              data-journey="rmit"
+            >
+              <span class="timeline-year">2023–2024</span>
+              <span class="timeline-title">RMIT</span>
+              <span class="timeline-role">
+                Master of Analytics · Peer Mentor
+              </span>
+            </button>
+
+
+            <button
+              class="timeline-item"
+              type="button"
+              data-journey="intelli"
+            >
+              <span class="timeline-year">2024</span>
+              <span class="timeline-title">IntelliPharm</span>
+              <span class="timeline-role">
+                Technical Business Analyst
+              </span>
+            </button>
+
+
+            <button
+              class="timeline-item"
+              type="button"
+              data-journey="w4s"
+            >
+              <span class="timeline-year">2024–Present</span>
+              <span class="timeline-title">Women4STEM</span>
+              <span class="timeline-role">
+                Data Analyst
+              </span>
+            </button>
+
+
+            <button
+              class="timeline-item"
+              type="button"
+              data-journey="gww"
+            >
+              <span class="timeline-year">2025–Present</span>
+              <span class="timeline-title">
+                Operations & Process Improvement
+              </span>
+              <span class="timeline-role">
+                Greater Western Water project
+              </span>
+            </button>
+
+          </div>
+
+
+          <div
+            class="journey-detail reveal"
+            id="journeyDetail"
+          ></div>
+
+        </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================================================
+         HOW I WORK
+         ========================================================= -->
 
     <section class="section" id="thinking">
+
       <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">How I work</p><h2>My thinking should be visible</h2></div>
-        <div class="thinking-flow reveal">
-          <button type="button" class="thinking-step active" data-thinking="understand"><span>1</span><strong>Understand</strong><small>What is actually wrong?</small></button><div class="flow-line"></div>
-          <button type="button" class="thinking-step" data-thinking="structure"><span>2</span><strong>Structure</strong><small>Data · process · users</small></button><div class="flow-line"></div>
-          <button type="button" class="thinking-step" data-thinking="build"><span>3</span><strong>Build</strong><small>Smallest useful solution</small></button><div class="flow-line"></div>
-          <button type="button" class="thinking-step" data-thinking="validate"><span>4</span><strong>Validate</strong><small>Test with real cases</small></button><div class="flow-line"></div>
-          <button type="button" class="thinking-step" data-thinking="improve"><span>5</span><strong>Improve</strong><small>Fix root causes</small></button>
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">
+            How I work
+          </p>
+
+          <h2>
+            My thinking should be visible
+          </h2>
+
         </div>
-        <div class="thinking-detail reveal" id="thinkingDetail"></div>
+
+
+        <div class="thinking-flow reveal">
+
+          <button
+            type="button"
+            class="thinking-step active"
+            data-thinking="understand"
+          >
+            <span>1</span>
+            <strong>Understand</strong>
+            <small>What is actually wrong?</small>
+          </button>
+
+          <div class="flow-line"></div>
+
+
+          <button
+            type="button"
+            class="thinking-step"
+            data-thinking="structure"
+          >
+            <span>2</span>
+            <strong>Structure</strong>
+            <small>Data · process · users</small>
+          </button>
+
+          <div class="flow-line"></div>
+
+
+          <button
+            type="button"
+            class="thinking-step"
+            data-thinking="build"
+          >
+            <span>3</span>
+            <strong>Build</strong>
+            <small>Smallest useful solution</small>
+          </button>
+
+          <div class="flow-line"></div>
+
+
+          <button
+            type="button"
+            class="thinking-step"
+            data-thinking="validate"
+          >
+            <span>4</span>
+            <strong>Validate</strong>
+            <small>Test with real cases</small>
+          </button>
+
+          <div class="flow-line"></div>
+
+
+          <button
+            type="button"
+            class="thinking-step"
+            data-thinking="improve"
+          >
+            <span>5</span>
+            <strong>Improve</strong>
+            <small>Fix root causes</small>
+          </button>
+
+        </div>
+
+
+        <div
+          class="thinking-detail reveal"
+          id="thinkingDetail"
+        ></div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================================================
+         SKILLS
+         ========================================================= -->
 
     <section class="section section-alt" id="skills">
+
       <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">Capabilities</p><h2>Skills organised by evidence</h2><p>Click a capability to see where I have actually used it.</p></div>
-        <div class="skill-tabs">
-          <button type="button" class="skill-tab active" data-skill="analytics">Data Analytics</button>
-          <button type="button" class="skill-tab" data-skill="business">Business Analysis</button>
-          <button type="button" class="skill-tab" data-skill="communication">Communication</button>
-          <button type="button" class="skill-tab" data-skill="product">Product & Automation</button>
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">
+            Capabilities
+          </p>
+
+          <h2>
+            Skills organised by evidence
+          </h2>
+
+          <p>
+            Click a capability to see where I have actually used it.
+          </p>
+
         </div>
-        <div class="skill-detail reveal" id="skillDetail"></div>
+
+
+        <div class="skill-tabs">
+
+          <button
+            type="button"
+            class="skill-tab active"
+            data-skill="analytics"
+          >
+            Data Analytics
+          </button>
+
+          <button
+            type="button"
+            class="skill-tab"
+            data-skill="business"
+          >
+            Business Analysis
+          </button>
+
+          <button
+            type="button"
+            class="skill-tab"
+            data-skill="communication"
+          >
+            Communication
+          </button>
+
+          <button
+            type="button"
+            class="skill-tab"
+            data-skill="product"
+          >
+            Product & Automation
+          </button>
+
+        </div>
+
+
+        <div
+          class="skill-detail reveal"
+          id="skillDetail"
+        ></div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================================================
+         ABOUT
+         ========================================================= -->
 
     <section class="section" id="about">
+
       <div class="container about-grid">
-        <div class="about-copy reveal"><p class="eyebrow">About</p><h2>Curious about systems. Practical about solutions.</h2><p>My background in economics shaped how I think about trade-offs, incentives and constrained decisions. Analytics gave me the tools to test those ideas with data.</p><p>I’m most interested in roles where I can combine analysis, business understanding and problem solving rather than work in only one narrow technical lane.</p></div>
-        <div class="about-code reveal"><div><span>focus:</span> useful decisions</div><div><span>style:</span> structured + pragmatic</div><div><span>strength:</span> problem → system → outcome</div><div><span>location:</span> Melbourne, Australia</div><div><span>interests:</span> analytics · BA · reporting · product thinking</div></div>
+
+        <div class="about-copy reveal">
+
+          <p class="eyebrow">
+            About
+          </p>
+
+          <h2>
+            Curious about systems. Practical about solutions.
+          </h2>
+
+          <p>
+            My background in economics shaped how I think about trade-offs,
+            incentives and constrained decisions. Analytics gave me the tools
+            to test those ideas with data.
+          </p>
+
+          <p>
+            I’m most interested in roles where I can combine analysis,
+            business understanding and problem solving rather than work in
+            only one narrow technical lane.
+          </p>
+
+        </div>
+
+
+        <div class="about-code reveal">
+
+          <div>
+            <span>focus:</span>
+            useful decisions
+          </div>
+
+          <div>
+            <span>style:</span>
+            structured + pragmatic
+          </div>
+
+          <div>
+            <span>strength:</span>
+            problem → system → outcome
+          </div>
+
+          <div>
+            <span>location:</span>
+            Melbourne, Australia
+          </div>
+
+          <div>
+            <span>interests:</span>
+            analytics · BA · reporting · product thinking
+          </div>
+
+        </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================================================
+         CONTACT
+         ========================================================= -->
 
     <section class="section section-alt" id="contact">
+
       <div class="container contact-card reveal">
-        <div><p class="eyebrow">Contact</p><h2>Let’s talk about useful problems.</h2><p>I’m open to Data Analyst, Business Analyst and Reporting / Insights opportunities.</p></div>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="#" data-config-link="email">Email me</a>
-          <a class="btn btn-secondary" href="#" data-config-link="linkedin" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-secondary" href="#" data-config-link="github" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn-secondary" href="#" data-config-link="resume" target="_blank" rel="noopener">Download résumé</a>
+
+        <div>
+
+          <p class="eyebrow">
+            Contact
+          </p>
+
+          <h2>
+            Let’s talk about useful problems.
+          </h2>
+
+          <p>
+            I’m open to Data Analyst, Business Analyst and Reporting /
+            Insights opportunities.
+          </p>
+
         </div>
-        <p class="config-note" id="configNote">Add your real contact links in <code>script.js</code> before publishing.</p>
+
+
+        <div class="contact-actions">
+
+          <a
+            class="btn btn-primary"
+            href="#"
+            data-config-link="email"
+          >
+            Email me
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="#"
+            data-config-link="linkedin"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="#"
+            data-config-link="github"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub
+          </a>
+
+          <!-- Capital R matches your GitHub folder -->
+          <a
+            class="btn btn-secondary"
+            href="Resume/"
+            target="_blank"
+            rel="noopener"
+          >
+            View résumé ↗
+          </a>
+
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
-  <footer class="site-footer"><div class="container footer-wrap"><span>© <span id="year"></span> Samay Jain</span><a href="#top">Back to top ↑</a></div></footer>
 
-  <dialog class="case-modal" id="caseModal" aria-labelledby="caseTitle"><button class="modal-close" id="modalClose" type="button" aria-label="Close case study">×</button><div id="caseContent"></div></dialog>
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-wrap">
+
+      <span>
+        © <span id="year"></span> Samay Jain
+      </span>
+
+      <a href="#top">
+        Back to top ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       CASE STUDY MODAL
+       ========================================================= -->
+
+  <dialog
+    class="case-modal"
+    id="caseModal"
+    aria-labelledby="caseTitle"
+  >
+
+    <button
+      class="modal-close"
+      id="modalClose"
+      type="button"
+      aria-label="Close case study"
+    >
+      ×
+    </button>
+
+    <div id="caseContent"></div>
+
+  </dialog>
+
+
   <script src="script.js"></script>
+
 </body>
+
 </html>
