@@ -3,7 +3,7 @@
   --surface: #ffffff;
   --surface-2: #f0f2f7;
   --text: #171a22;
-  --muted: #5f6673;
+  --muted: #6a7180;
   --border: #dde1ea;
   --accent: #355cff;
   --accent-2: #2248dc;
@@ -55,6 +55,7 @@ h1 { font-size: clamp(3rem,7vw,5.8rem); line-height: .98; letter-spacing: -.055e
 h2 { font-size: clamp(2.2rem,5vw,4rem); line-height: 1.03; letter-spacing: -.04em; margin-bottom: 18px; }
 h3 { font-size: 1.45rem; line-height: 1.2; letter-spacing: -.025em; }
 .hero-lede { max-width: 800px; font-size: 1.16rem; color: var(--muted); }
+.hero-sub { max-width: 800px; font-size: clamp(1.3rem,2.4vw,1.7rem); font-weight: 650; letter-spacing: -.015em; color: var(--text); margin: -14px 0 22px; }
 .hero-actions,.project-actions,.contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .demo-note { margin: 10px 0 0; font-size: .82rem; color: var(--muted); }
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 18px; border-radius: 12px; text-decoration: none; font-weight: 750; border: 1px solid transparent; cursor: pointer; font: inherit; }
@@ -169,7 +170,7 @@ h3 { font-size: 1.45rem; line-height: 1.2; letter-spacing: -.025em; }
   .thinking-step { width: 100%; }
   .flow-line { width: 1px; height: 18px; margin-left: 28px; }
 }
-@media (max-width: 860px) {
+@media (max-width: 740px) {
   .section { padding: 72px 0; }
   .hero { padding-top: 88px; }
   .container { width: min(calc(100% - 28px),var(--max-width)); }
