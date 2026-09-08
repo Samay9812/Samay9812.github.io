@@ -2,7 +2,7 @@ const CONFIG = {
   email: "smayj705@gmail.com",
   linkedin: "https://www.linkedin.com/in/samay-jain-5001241b3/",
   github: "https://github.com/Samay9812",
-  analytiqal: "https://analytiappl-main-mwzynzhsburttnfjtgt98r.streamlit.app/"
+  analytiqal: "https://analytiqal-main-1.onrender.com/"
 };
 
 const journeyData = {
